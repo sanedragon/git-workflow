@@ -27,7 +27,7 @@ Branches
 -- Prior to release, do a feature freeze (stop adding new features to the release) and do your
    manual regression testing and QA.
 -- Merge to master as the last step of deployment, after checking that the live environment is
-   working properly.
+   working properly. Merge with --no-ff, to be sure to get a merge commit.
 
 - topic: A branch for feature development. The branch should have the owner identified, the
   subject matter identified and if you are using a work ticket tracker, the ticket identifier
@@ -41,4 +41,5 @@ Branches
    compile cleanly. This way, if you have a subtle bug, it's easier to use git bisect to find
    where it was introduced. In addition, each commit should focus on a single feature, component or
    bug fix. It should be clear from the commit message what the change is and why it is needed,
-   either a work ticket reference or a prose explanation. 
+   either a work ticket reference or a prose explanation.
+-- Always merge to candidate with the --no-ff option, to be sure to get a merge commit.
