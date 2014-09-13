@@ -43,3 +43,5 @@ Branches
       bug fix. It should be clear from the commit message what the change is and why it is needed,
       either a work ticket reference or a prose explanation.
     - Always merge to candidate with the --no-ff option, to be sure to get a merge commit.
+    - Leave the topic branch around until it is merged into master. Since candidate allows rewriting
+      history, occasionally merges into candidate will need to be recreated.
